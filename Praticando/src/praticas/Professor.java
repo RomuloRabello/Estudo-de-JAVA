@@ -11,7 +11,23 @@ public class Professor extends Pessoa {
         solicitarNomeProfessor();
     }
     
-    public Professor(String pNome) {
+    public String getCodigo() {
+		return codigo;
+	}
+
+	public void setCodigo(String codigo) {
+		this.codigo = codigo;
+	}
+
+	public String getNomeProf() {
+		return nomeProf;
+	}
+
+	public void setNomeProf(String nomeProf) {
+		this.nomeProf = nomeProf;
+	}
+
+	public Professor(String pNome) {
         super(pNome); 
         codigo = JOptionPane.showInputDialog("Código do Professor: ");
     }
